@@ -1,6 +1,5 @@
 <script>
 import NavItem from "../components/Nav.vue";
-import FooterItem from "../components/Footer.vue";
 import axios from "axios";
 import { ref } from "vue";
 
@@ -14,7 +13,6 @@ export default {
 
   components: {
     NavItem,
-    FooterItem,
   },
 
   mounted() {
@@ -50,40 +48,9 @@ export default {
     <div class="container">
       <div class="row text-center mt-5">
         <div>
-          <img src="../assets/al-quran.png" width="250" alt="logo" />
+          <img src="../assets/al-quran.png" width="300" alt="logo" />
         </div>
-        <div class="mt-5">
-          <input class="form-control form-control-lg mb-5 font-italic" type="text" v-model="search" placeholder="Hellow brother what do you want to read?" />
-          <p>Mostly people search</p>
-        </div>
-        <div class="col">
-          <router-link
-            class="btn btn-dark"
-            :to="{ name: 'surah', params: { id: 67 } }"
-            >Al - Mulk</router-link
-          >
-        </div>
-        <div class="col">
-          <router-link
-            class="btn btn-dark"
-            :to="{ name: 'surah', params: { id: 36 } }"
-            >Yaseen</router-link
-          >
-        </div>
-        <div class="col">
-          <router-link
-            class="btn btn-dark"
-            :to="{ name: 'surah', params: { id: 18 } }"
-            >Al - Kahf</router-link
-          >
-        </div>
-        <div class="col">
-          <router-link
-            class="btn btn-dark"
-            :to="{ name: 'surah', params: { id: 56 } }"
-            >Al - Waqi'ah</router-link
-          >
-        </div>
+
       </div>
       <div class="surahs-overview-section__surahs-container mt-5">
         <div class="row">
@@ -117,7 +84,6 @@ export default {
       </div>
     </div>
   </main>
-  <FooterItem />
 </template>
 
 <style scoped>

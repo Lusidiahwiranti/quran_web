@@ -1,6 +1,5 @@
 <script>
 import NavItem from "../components/Nav.vue";
-import FooterItem from "../components/Footer.vue";
 import axios from "axios";
 import { ref } from "vue";
 
@@ -15,7 +14,6 @@ export default {
   },
 
   components: {
-    FooterItem,
     NavItem,
   },
 
@@ -73,7 +71,7 @@ export default {
     <div class="container">
       <div class="row text-center mt-5">
         <div>
-          <img src="../assets/al-quran.png" width="250" alt="logo" />
+          <img src="../assets/al-quran.png" width="300" alt="logo" />
         </div>
         <div class="mt-5">
           <ul class="nav justify-content-center mb-5 nav-pills">
@@ -121,7 +119,6 @@ export default {
       </div>
     </div>
   </main>
-  <FooterItem />
 </template>
 
 <style scoped>

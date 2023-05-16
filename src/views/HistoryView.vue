@@ -1,6 +1,5 @@
 <script>
 import NavItem from "../components/Nav.vue";
-import FooterItem from "../components/Footer.vue";
 import axios from "axios";
 import { ref } from "vue";
 
@@ -14,7 +13,6 @@ export default {
 
   components: {
     NavItem,
-    FooterItem,
   },
 
   mounted() {
@@ -68,7 +66,6 @@ export default {
       </div>
     </div>
   </main>
-  <FooterItem />
 </template>
 
 <style scoped>
